@@ -1,75 +1,76 @@
 {
-  "semantics": [
+  "semantics":[
     {
-      "label": "Interactive Video Editor",
-      "fields": [
+      "label":"Editor de Film Interactiv",
+      "fields":[
         {
-          "label": "Upload/embed video",
-          "fields": [
+          "label":"Incarca /incorporeaza video",
+          "fields":[
             {
-              "label": "Add a video",
-              "description": "Click below to add a video you wish to use in your interactive video. You can add a video link or upload video files. It is possible to add several versions of the video with different qualities. To ensure maximum support in browsers at least add a version in webm and mp4 formats."
+              "label":"Adauga un material video",
+              "description":"Fa un clic mai jos pentru a adauga un videoclip pe care doristi sa il utilizezi in videoclipul tau interactiv. Poti adauga un link video sau poti incarca un fisier video. Este posibil sa adaugi mai multe versiuni ale videoclipului cu diferite niveluri calitative. Pentru a asigura o functionare optima incarcati fisiere in format mp4."
             },
             {
-              "label": "Start screen options (unsupported for YouTube videos)",
-              "fields": [
+              "label":"Optiuni pentru ecranul de pornire (nu sunt acceptate pentru videoclipuri YouTube)",
+              "fields":[
                 {
-                  "label": "The title of this interactive video",
-                  "default": "Interactive Video",
-                  "description": "Used in summaries, statistics etc."
+                  "label":"Titlul materialului video interactiv",
+                  "default":"Video Interactiv",
+                  "description":"Este folosit pentru a prezenta pe scurt diferite subiecte de interes,statistici etc. etc."
                 },
                 {
-                  "label": "Hide title on video start screen"
+                  "label":"Ascunde titlul in ecranul de inceput al materialului video"
                 },
                 {
-                  "label": "Short description (Optional)",
-                  "description": "Optional. Display a short description text on the video start screen. Does not work for YouTube videos."
+                  "label":"Descriere scurta(Optional)",
+                  "description":"Optional. Afiseaza in ecranul de inceput un scurt text care descrie continutul materialului video.Acest lucru nu functioneaza pentru materialele video incarcate de pe YouTube."
                 },
                 {
-                  "label": "Poster image",
-                  "description": "Image displayed before the user launches the video. Does not work for YouTube Videos."
+                  "label":"Imagine de afis",
+                  "description":"Imaginea va fi afisata inainte ca utilizatorul sa accesezul materialul video. Acest lucru nu functioneaza pentru materialele video incarcate de pe YouTube."
                 },
                 {
-                  "label": "Video copyright information",
-                  "description": "Information regarding copyright of the video and elements used in the video."
+                  "label":"Informatii despre drepturile de autor",
+                  "description":"Informatii despre drepturile de autor ale materialului video si ale elementelor folosite in film."
                 }
               ]
             },
             {
-              "label": "Text tracks (unsupported for YouTube videos)",
-              "fields": [
+              "label":"Etichete de text orientative (nu sunt functionale pentru filmele de pe YouTube)",
+              "fields":[
                 {
-                  "label": "Available text tracks",
-                  "entity": "Track",
-                  "field": {
-                    "label": "Track",
-                    "fields": [
+                  "label":"Foloseste etichete de text orientative, ",
+                  "entity":"Semn",
+                  "field":{
+                    "label":"Semn",
+                    "fields":[
                       {
-                        "label": "Track label",
-                        "description": "Used if you offer multiple tracks and the user has to choose a track. For instance 'Spanish subtitles' could be the label of a Spanish subtitle track.",
-                        "default": "Subtitles"
+                        "label":"Eticheta ajutatoare",
+                        "description":"Este utilizat in situatia in care utilizatorul are de ales din mai multe optiuni una singura. De exemplu 'Subtitrarile in limba spaniola' ar putea fi eticheta unei optiuni de Subtitrare in limba spaniola.",
+                        "default":"Subtitrare"
                       },
                       {
-                        "label": "Type of text track",
-                        "options": [
+                        "label":"Tipul de text urmarit",
+                        "default":"subtitrari",
+                        "options":[
                           {
-                            "label": "Subtitles"
+                            "label":"Subtitrari"
                           },
                           {
-                            "label": "Captions"
+                            "label":"Capturi de ecran"
                           },
                           {
-                            "label": "Descriptions"
+                            "label":"Descriere"
                           }
                         ]
                       },
                       {
-                        "label": "Source language, must be defined for subtitles",
-                        "default": "en",
-                        "description": "Must be a valid BCP 47 language tag. If 'Subtitles' is the type of text track selected, the source language of the track must be defined."
+                        "label":"Limba de baza trebuie definita pentru subtitrari",
+                        "default":"ro",
+                        "description":" Trebuie sa fie o limba validata de standardul HTML si XML, BCP 47, Best Current Practice. In cazul in care subtitrarile reprezinta una dintre categoriile de text selectate, atunci trebuie definit limbajul sursa ."
                       },
                       {
-                        "label": "Track source (WebVTT file)"
+                        "label":"Urmareste sursa (fisier WebVTT)"
                       }
                     ]
                   }
@@ -79,391 +80,387 @@
           ]
         },
         {
-          "label": "Add interactions",
-          "fields": [
+          "label":"Adauga interactiuni",
+          "fields":[
             {
-              "field": {
-                "fields": [
+              "field":{
+                "fields":[
                   {
-                    "label": "Display time"
-                  },
-                  {
-                    "label": "Pause video"
-                  },
-                  {
-                    "label": "Display as",
-                    "description": "<b>Button</b> is a collapsed interaction the user must press to open. <b>Poster</b> is an expanded interaction displayed directly on top of the video",
-                    "options": [
+                    "label":"Afisati durata filmului",
+                    "fields":[
                       {
-                        "label": "Button"
+                        
                       },
                       {
-                        "label": "Poster"
+                        
                       }
                     ]
                   },
                   {
-                    "label": "Turn into button on small screens"
+                    "label":"Pauza"
                   },
                   {
-                    "label": "Label",
-                    "description": "Label displayed next to interaction icon."
-                  },
-                  {},
-                  {},
-                  {},
-                  {},
-                  {},
-                  {},
-                  {
-                    "label": "Adaptivity",
-                    "fields": [
+                    "label":"Afiseaza ca",
+                    "description":"<b>Butonul</b> reprezinta o interactiune care apare pe ecran si pe care utilizatorul trebuie sa o deschida. <b>Afisul</b> este o extensie a acestei interactiuni",
+                    "options":[
                       {
-                        "label": "Action on all correct",
-                        "fields": [
+                        "label":"Buton"
+                      },
+                      {
+                        "label":"Afis"
+                      }
+                    ],
+                    "default":"buton"
+                  },
+                  {
+                    "label":"Transforma butonul pe ecranele de mici dimensiuni"
+                  },
+                  {
+                    "label":"Eticheta",
+                    "description":" Eticheta este afisata la interactiunea cu simbolul grafic."
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    
+                  },
+                  {
+                    "label":"Adaptativitate",
+                    "fields":[
+                      {
+                        "label":"Actioneaza pe toate elementele in mod corect",
+                        "fields":[
                           {
-                            "label": "Seek to",
-                            "description": "Enter timecode in the format M:SS"
+                            "label":"Cauta sa",
+                            "description":"Insereaza timecode-ul in format M:SS"
                           },
                           {
-                            "label": "Allow the user to opt out and continue"
+                            "label":" Permite utilizatorului sa renunte si sa continue"
                           },
                           {
-                            "label": "Message"
+                            "label":"Mesaj"
                           },
                           {
-                            "label": "Label for seek button"
+                            "label":"Eticheta pentru butonul de căutare"
                           }
                         ]
                       },
                       {
-                        "label": "Action on wrong",
-                        "fields": [
+                        "label":"Actiune in momementul in care a gresit",
+                        "fields":[
                           {
-                            "label": "Seek to",
-                            "description": "Enter timecode in the format M:SS"
+                            "label":"Cauta sa",
+                            "description":"Insereaza timecode-ul in format M:SS"
                           },
                           {
-                            "label": "Allow the user to opt out and continue"
+                            "label":"Permite utilizatorului sa renunte si sa continue"
                           },
                           {
-                            "label": "Message"
+                            "label":"Mesaj"
                           },
                           {
-                            "label": "Label for seek button"
+                            "label":"Eticheta pentru butonul de căutare"
                           }
                         ]
                       },
                       {
-                        "label": "Require full score for task before proceeding",
-                        "description": "For best functionality this option should be used in conjunction with the \"Prevent skipping forward in a video\" option of Interactive Video."
+                        "label":"Solicita punctaj maxim pentru sarcina înainte de a continua",
+                        "description":" Pentru cea mai buna funcționalitate, aceasta optiune ar trebui utilizata împreună cu\"Prevenirea inaintarii in video\" optiunea aplicatiei de Video Interactiv."
                       }
                     ]
                   },
                   {
-                    "label": "Visuals",
-                    "fields": [
+                    "label":"Elemente Vizuale",
+                    "fields":[
                       {
-                        "label": "Background color"
+                        "label":"Culoarea imaginii de fundal",
+                        "default":"rgb(255, 255, 255)",
+                        "spectrum":{
+                          
+                        }
                       },
                       {
-                        "label": "Box shadow",
-                        "description": "Adds a subtle shadow around the interaction. You might want to disable this for completely transparent interactions"
+                        "label":"Marcaj cu efect de umbra",
+                        "description":"Poti adauga o umbra subtila in jurul interacțiunii. Poate doresti sa dezactivezi acest lucru pentru interacțiuni complet transparente."
                       }
                     ]
                   },
                   {
-                    "label": "Go to on click",
-                    "fields": [
+                    "label":"Mergi la click",
+                    "fields":[
                       {
-                        "label": "Type",
-                        "options": [
+                        "label":"Tip",
+                        "options":[
                           {
-                            "label": "Timecode"
+                            "label":"Timecode"
                           },
                           {
-                            "label": "Another page (URL)"
+                            "label":"O alta pagina (URL)"
                           }
                         ]
                       },
                       {
-                        "label": "Go To",
-                        "description": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS."
+                        "label":"Mergi la",
+                        "description":"Timpul definit pentru ca un utilizator sa selecteze butinul de hotspot. Insereaza timpul in format M:SS."
                       },
                       {
-                        "label": "URL",
-                        "fields": [
+                        "label":"URL",
+                        "fields":[
                           {
-                            "label": "Protocol",
-                            "options": [
+                            "label":"Protocol",
+                            "options":[
                               {
-                                "label": "http://"
+                                "label":"http://"
                               },
                               {
-                                "label": "https://"
+                                "label":"https://"
                               },
                               {
-                                "label": "(root relative)"
+                                "label":"(sursa relativa)"
                               },
                               {
-                                "label": "other"
+                                "label":"altele"
                               }
-                            ]
+                            ],
+                            "default":"http://"
                           },
                           {
-                            "label": "URL"
+                            "label":"URL"
                           }
                         ]
                       },
                       {
-                        "label": "Visualize",
-                        "description": "Show that interaction can be clicked by adding a border and an icon"
+                        "label":"Vizualizeaza",
+                        "description":"Afiseaza interactiunea care poate fi selectata prin adaugarea unui chenar si a unui simbol grafic"
                       }
                     ]
                   }
                 ]
               }
             },
-            {},
-            {}
+            {
+              "field":{
+                "fields":[
+                  {
+                    
+                  },
+                  {
+                    
+                  }
+                ]
+              }
+            }
           ]
         },
         {
-          "label": "Summary task",
-          "fields": [
-            {},
+          "label":"Prezentarea sarcinii de lucru",
+          "fields":[
             {
-              "label": "Display at",
-              "description": "Number of seconds before the video ends."
+              "default":{
+                "params":{
+                  
+                }
+              }
+            },
+            {
+              "label":"Afiseaza la",
+              "description":"Numarul de secunde inainte ca materialul video sa se sfarseasca."
             }
           ]
         }
       ]
     },
     {
-      "label": "Behavioural settings",
-      "fields": [
+      "label":"Setari de comportament",
+      "fields":[
         {
-          "label": "Start video at",
-          "description": "Enter timecode in the format M:SS"
+          "label":"Materialul video incepe de la",
+          "description":"Insereaza codul de timp in the format M:SS"
         },
         {
-          "label": "Auto-play video",
-          "description": "Start playing the video automatically"
+          "label":"Materialul video ruleaza automat",
+          "description":"Incepe rularea automata a materialului video"
         },
         {
-          "label": "Loop the video",
-          "description": "Check if video should run in a loop"
+          "label":"Materialul video ruleaza continuu",
+          "description":"Verifica daca materialul video ar trebui sa ruleze continuu, in bucla."
         },
         {
-          "label": "Override \"Show Solution\" button",
-          "description": "This option determines if the \"Show Solution\" button will be shown for all questions, disabled for all or configured for each question individually.",
-          "options": [
+          "label":"Treci peste \"Afiseaza Solutia\" buton",
+          "description":"Aceasta optiune determina daca \"Afisarea Solutiei\" va fi afisata pentru toate intrebarile sau configurata pentru fiecare intrebare in parte.",
+          "options":[
             {
-              "label": "Enabled"
+              "label":"Activat"
             },
             {
-              "label": "Disabled"
+              "label":"Deazactivat"
             }
           ]
         },
         {
-          "label": "Override \"Retry\" button",
-          "description": "This option determines if the \"Retry\" button will be shown for all questions, disabled for all or configured for each question individually.",
-          "options": [
+          "label":"Buton Treci peste \"Reincearca\"",
+          "description":"Aceasta optiune determina daca butonul \"Reincearca\" va fi afisat pentru toate intrebarile sau dezactivat pentru toate si configurat pentru fiecare intrebare in parte.",
+          "options":[
             {
-              "label": "Enabled"
+              "label":"Activat"
             },
             {
-              "label": "Disabled"
+              "label":"Dezactivat"
             }
           ]
         },
         {
-          "label": "Start with bookmarks menu open",
-          "description": "This function is not available on iPad when using YouTube as video source."
+          "label":"Incepeti prin a deschide meniul cu marcaje",
+          "description":"Aceasta functie nu este activa pe iPad sau cand utilizezi un material video din Youtube"
         },
         {
-          "label": "Show button for rewinding 10 seconds"
+          "label":"Afiseaza butonul de derulare la 10 secunde"
         },
         {
-          "label": "Prevent skipping forward in a video",
-          "description": "Enabling this options will disable user video navigation through default controls."
+          "label":"Opreste inaintarea in cadrul filmului",
+          "description":"Activarea acestor optiuni va dezactiva navigarea in film a utilizatorilor prin comenzile implicite."
         },
         {
-          "label": "Deactivate sound",
-          "description": "Enabling this option will deactivate the video's sound and prevent it from being switched on."
+          "label":"Deactivati sunetul",
+          "description":"Activarea acestei optiuni va dezactiva sunetul filmului si va impiedica pornirea acestuia."
         }
       ]
     },
     {
-      "label": "Localize",
-      "fields": [
+      "label":"Localizeaza",
+      "fields":[
         {
-          "label": "Interaction title",
-          "default": "Interaction"
+          "label":"Titlul interactiunii",
+          "default":"Interactiunea"
         },
         {
-          "label": "Play title",
-          "default": "Play"
+          "label":"Porneste filmul",
+          "default":"Reda"
         },
         {
-          "label": "Pause title",
-          "default": "Pause"
+          "label":"Pauza",
+          "default":"Pause"
         },
         {
-          "label": "Mute title",
-          "default": "Mute"
+          "label":"Fara sunet",
+          "default":"Fara sunet"
         },
         {
-          "label": "Unmute title",
-          "default": "Unmute"
+          "label":"Porneste sunetul",
+          "default":"Dezactiveaza optiunea fara sunet"
         },
         {
-          "label": "Video quality title",
-          "default": "Video Quality"
+          "label":"Calitatea filmului",
+          "default":"Calitatea filmului"
         },
         {
-          "label": "Video captions title",
-          "default": "Captions"
+          "label":"Subtritrari",
+          "default":"Subtitrari"
         },
         {
-          "label": "Close button text",
-          "default": "Close"
+          "label":"Inchide",
+          "default":"Inchide"
         },
         {
-          "label": "Fullscreen title",
-          "default": "Fullscreen"
+          "label":"Ecran complet",
+          "default":"Ecran complet"
         },
         {
-          "label": "Exit fullscreen title",
-          "default": "Exit Fullscreen"
+          "label":"Iesi din ecranul complet",
+          "default":"Iesi din ecranul complet"
         },
         {
-          "label": "Summary title",
-          "default": "Summary"
+          "label":"Sumar",
+          "default":"Sumar"
         },
         {
-          "label": "Bookmarks title",
-          "default": "Bookmarks"
+          "label":"Marcaje de text",
+          "default":"Marcaje de text"
         },
         {
-          "label": "Submit screen title",
-          "default": "Submit screen"
+          "label":"Eticheta standard pentru butonul de cautare pentru adaptivitate",
+          "default":"Continua"
         },
         {
-          "label": "Default label for adaptivity seek button",
-          "default": "Continue"
+          "label":"Etichets standard pentru butonul Continuare video",
+          "default":"Continuare video"
         },
         {
-          "label": "Default label for continue video button",
-          "default": "Continue with video"
+          "label":"Seteaza rata de redare",
+          "default":"Rata de redare"
         },
         {
-          "label": "Set playback rate",
-          "default": "Playback Rate"
+          "label":"Deruleaza 10 secunde",
+          "default":"Deruleaza 10 secunde"
         },
         {
-          "label": "Rewind 10 Seconds",
-          "default": "Rewind 10 Seconds"
+          "label":"Navigarea in film este dezactivata",
+          "default":"Navigarea in film este dezactivata"
         },
         {
-          "label": "Navigation is disabled text",
-          "default": "Navigation is disabled"
+          "label":"Sunetul este dezactivat",
+          "default":"Sunetul este dezactivat"
         },
         {
-          "label": "Sound is disabled text",
-          "default": "Sound is disabled"
+          "label":"Atentioneaza utilizatorul ca trebuie sa raspunda corect la intrebare inainte de a continua",
+          "default":"Este necesar sa raspunzi corect la toate intrebarile inainte de a continua."
         },
         {
-          "label": "Warning that the user must answer the question correctly before continuing",
-          "default": "You need to answer all the questions correctly before continuing."
+          "label":"Inapoi",
+          "default":"Inapoi"
         },
         {
-          "label": "Back button",
-          "default": "Back"
+          "label":"Ore contorizate",
+          "default":"ore"
         },
         {
-          "label": "Passed time hours",
-          "default": "Hours"
+          "label":"Minute contorizate",
+          "default":"Minute"
         },
         {
-          "label": "Passed time minutes",
-          "default": "Minutes"
+          "label":"Secunde contorizate",
+          "default":"Secunde"
         },
         {
-          "label": "Passed time seconds",
-          "default": "Seconds"
+          "label":"Eticheta pentru timpul curent",
+          "default":"Timpul real:"
         },
         {
-          "label": "Label for current time",
-          "default": "Current time:"
+          "label":"Eticheta pentru timpul total",
+          "default":"Timpul total:"
         },
         {
-          "label": "Label for total time",
-          "default": "Total time:"
+          "label":"text pentru explicarea tastei rapide de navigare",
+          "default":"Utilizeaza tasta k pentru pornirea si oprirea videoclipului in orice moment"
         },
         {
-          "label": "Text for explaining navigation hotkey",
-          "default": "Use key k for starting and stopping video at any time"
+          "label":"Textul care explică faptul ca a aparut o singura interactiune",
+          "default":"A aparut o interactiune:"
         },
         {
-          "label": "Text explaining that a single interaction with a name has come into view",
-          "default": "Interaction appeared:"
+          "label":"Text pentru a explica faptul ca au aparut multiple interactiuni",
+          "default":"Multiple interactiuni."
         },
         {
-          "label": "Text for explaining that multiple interactions have come into view",
-          "default": "Multiple interactions appeared."
+          "label":"Videoclipul este pus pe pauza",
+          "default":"Videoclipul este pus pe pauza"
         },
         {
-          "label": "Video is paused announcement",
-          "default": "Video is paused"
-        },
-        {
-          "label": "Content label",
-          "default": "Content"
-        },
-        {
-          "label": "Answered message (@answered will be replaced with the number of answered questions)",
-          "default": "@answered answered"
-        },
-        {
-          "label": "Submit screen title",
-          "default": "@answered Question(s) answered",
-          "description": "@answered will be replaced by the number of answered questions."
-        },
-        {
-          "label": "Submit screen information",
-          "default": "You have answered @answered questions, click below to submit your answers.",
-          "description": "@answered will be replaced by the number of answered questions."
-        },
-        {
-          "label": "Submit screen information for missing answers",
-          "default": "You have not answered any questions."
-        },
-        {
-          "label": "Submit screen information for answer needed",
-          "default": "You have to answer at least one question before you can submit your answers."
-        },
-        {
-          "label": "Submit screen submit button",
-          "default": "Submit Answers"
-        },
-        {
-          "label": "Submit screen submit message",
-          "default": "Your answers have been submitted!"
-        },
-        {
-          "label": "Submit screen table row title: Answered questions",
-          "default": "Answered questions"
-        },
-        {
-          "label": "Submit screen table row title: Score",
-          "default": "Score"
-        },
-        {
-          "label": "Submit screen answered score",
-          "default": "answered"
+          "label": "Eticheta pentru Continut",
+          "default": "Continut"
         }
       ]
     }
